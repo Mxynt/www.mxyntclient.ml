@@ -1,0 +1,569 @@
+    @-ms-viewport {
+        width: device-width
+    }
+    
+    html {
+        box-sizing: border-box;
+        -ms-overflow-style: scrollbar
+    }
+    
+    *,
+     ::after,
+     ::before {
+        box-sizing: inherit
+    }
+    
+    html,
+    body {
+        font-family: 'PT Sans', sans-serif;
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+    }
+    
+    hr {
+        max-width: 420px;
+        color: #718093;
+    }
+    
+    p {
+        font-family: 'Lato', sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: 'PT Sans', sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .parallax {
+        height: 100%;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #5352ed;
+        transition: all .2s ease-in;
+    }
+    
+    a:hover {
+        text-decoration: none;
+        color: #192a56;
+        transition: all .2s ease-in;
+    }
+    
+    #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        border: none;
+        outline: none;
+        background-color: #3498db;
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+        padding-right: 19px;
+        padding-left: 19px;
+        font-size: 18px;
+        transition: all .2s ease-in;
+    }
+    
+    #myBtn:hover {
+        background-color: #2980b9;
+        transition: all .2s ease-in;
+    }
+    /* Navbar */
+    
+    .topnav {
+        list-style-type: none;
+        overflow: hidden;
+        background-color: (90deg, hsl(234, 28%, 40%) 0%, hsl(236, 54%, 39%) 100%);
+        box-shadow: 0px 6px 13px -7px rgba(0, 0, 0, 0.20);
+        transition: all .2s ease-in;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    
+    .topnav a {
+        float: left;
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 24px 26px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+    
+    .topnav a:hover {
+        color: #3498db;
+    }
+    
+    .topnav .icon {
+        display: none;
+    }
+    
+    @media screen and (max-width: 800px) {
+        .topnav a:not(:first-child) {
+            display: none;
+        }
+        .topnav a.icon {
+            float: right;
+            display: block;
+        }
+    }
+    
+    @media screen and (max-width: 800px) {
+        .topnav.responsive {
+            position: relative;
+        }
+        .topnav.responsive .icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        .topnav.responsive a {
+            float: none;
+            display: block;
+            text-align: left;
+        }
+    }
+    
+    @media screen and (min-width: 800px) {
+        div .max-width {
+            max-width: 60%;
+            margin: 0 auto;
+            box-shadow: none;
+        }
+    }
+    /* End Navbar */
+    
+    #head {
+        background-image: url("https://i.imgur.com/q6ZVsxC.jpg");
+        margin: 0;
+        padding: 222px 0px 222px 0px;
+        text-align: center;
+        color: white;
+    }
+    
+    #head h1 {
+        font-size: 55px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    
+    #head h3 {
+        font-size: 22px;
+        text-transform: uppercase;
+    }
+    
+    #about {
+        margin: 10px;
+        text-align: center;
+        padding-top: 66px;
+        padding-bottom: 66px;
+    }
+    
+    #about h1 {
+        font-size: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-top: 15px;
+    }
+    
+    #about .features {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding-top: 66px;
+    }
+    
+    #about .feature {
+        font-size: 60px;
+        color: #1c2630;
+        margin-top: 17px;
+    }
+    
+    #about h2 {
+        margin-top: 5px;
+        font-size: 20px;
+    }
+    
+    #about p {
+        margin-top: 3px;
+        font-size: 18px;
+    }
+    
+    #banner {
+        background-image: url("https://i.imgur.com/Gfjttlu.png");
+        padding: 75px 0px 75px 0px;
+        text-align: center;
+    }
+    
+    #banner2 {
+        background-image: url("https://i.imgur.com/0Ok967n.png");
+        padding: 75px 0px 75px 0px;
+        text-align: center;
+    }
+    
+    #banner3 {
+        background-image: url("https://i.imgur.com/BCOB8Ro.jpg");
+        padding: 75px 0px 75px 0px;
+        text-align: center;
+    }
+    
+    #banner h1 {
+        font-size: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: white;
+    }
+    
+    #banner h2 {
+        margin-top: 5px;
+        font-size: 20px;
+        color: white;
+    }
+    
+    #banner2 h1 {
+        font-size: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: white;
+    }
+    
+    #banner2 h2 {
+        margin-top: 5px;
+        font-size: 20px;
+        color: white;
+    }
+    
+    #banner3 h1 {
+        font-size: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: white;
+    }
+    
+    #banner3 h2 {
+        margin-top: 5px;
+        font-size: 20px;
+        color: white;
+    }
+    
+    #cosmetics {
+        margin: 10px;
+        text-align: center;
+        padding-top: 66px;
+        padding-bottom: 66px;
+    }
+    
+    #cosmetics h1 {
+        font-size: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-top: 15px;
+    }
+    
+    #cosmetics h2 {
+        margin-top: 5px;
+        font-size: 20px;
+    }
+    
+    #cosmetics p {
+        margin-top: 3px;
+        font-size: 18px;
+    }
+    
+    #cosmetics .stafflist {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding-top: 66px;
+    }
+    
+    #cosmetics .staffblock {
+        transform: none;
+        transition: all .2s ease-in;
+        margin-bottom: 5px;
+    }
+    
+    #cosmetics .staffblock:hover {
+        transform: scale(1.1, 1.1);
+        transition: all .2s ease-in;
+    }
+    
+    #staff {
+        margin: 10px;
+        text-align: center;
+        padding-top: 66px;
+        padding-bottom: 66px;
+    }
+    
+    #staff h1 {
+        font-size: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-top: 15px;
+    }
+    
+    #staff h2 {
+        margin-top: 5px;
+        font-size: 20px;
+    }
+    
+    #staff p {
+        margin-top: 3px;
+        font-size: 18px;
+    }
+    
+    #staff .stafflist {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding-top: 66px;
+    }
+    
+    #staff .staffblock {
+        transform: none;
+        transition: all .2s ease-in;
+        margin-bottom: 5px;
+    }
+    
+    #staff .staffblock:hover {
+        transform: scale(1.1, 1.1);
+        transition: all .2s ease-in;
+    }
+    
+    #gamemodes {
+        margin: 10px;
+        text-align: center;
+        padding-top: 66px;
+        padding-bottom: 66px;
+    }
+    
+    #gamemodes h1 {
+        font-size: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-top: 15px;
+    }
+    
+    #gamemodes h2 {
+        margin-top: 5px;
+        font-size: 20px;
+    }
+    
+    #gamemodes p {
+        margin-top: 3px;
+        font-size: 18px;
+    }
+    
+    #gamemodes .gray {
+        background-color: #ecf0f1;
+        padding: 0;
+        margin: -10px;
+    }
+    
+    #gamemodes .mode {
+        margin: 15px;
+        text-align: left;
+        padding: 50px;
+        max-width: 1280px;
+    }
+    
+    #gamemodes .mode-inv {
+        margin: 15px;
+        text-align: right;
+        padding: 50px;
+        max-width: 1280px
+    }
+    
+    @media screen and (min-width: 800px) {
+        #gamemodes .img {
+            margin: 15px;
+            padding: 50px;
+            max-width: 1280px
+        }
+    }
+    
+    @media screen and (max-width: 799px) {
+        #gamemodes .img {
+            padding: 50px 0px 50px 0px;
+        }
+    }
+    
+    #gamemodes .fixed-width {
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+    
+    #vote {
+        margin: 10px;
+        text-align: center;
+        padding-top: 66px;
+        padding-bottom: 66px;
+    }
+    
+    #vote h1 {
+        font-size: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-top: 15px;
+    }
+    
+    #vote h2 {
+        margin-top: 5px;
+        font-size: 20px;
+    }
+    
+    #vote p {
+        margin-top: 3px;
+        font-size: 18px;
+    }
+    
+    #vote .votelist {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding-top: 66px;
+        padding-bottom: 66px;
+    }
+    
+    #vote .voteblock {
+        transform: none;
+        transition: all .2s ease-in;
+    }
+    
+    .voteblock a {
+        font-weight: 700;
+    }
+    
+    footer {
+        background-color: #11171e;
+        color: white;
+    }
+    
+    .footer {
+        max-width: 1280px;
+        margin: 0 auto;
+        float: none;
+        padding-top: 66px;
+        padding-bottom: 66px;
+    }
+    
+    .copyright-notice {
+        color: #30343a;
+        margin: 0;
+        margin-bottom: 0px;
+        padding: 0;
+        text-align: center;
+        transition: all .2s ease-in;
+        cursor: default;
+    }
+    
+    .copyright-notice:hover {
+        color: white;
+        margin: 0;
+        margin-bottom: 0px;
+        padding: 0;
+        text-align: center;
+        transition: all .2s ease-in;
+    }
+    
+    @media screen and (min-width: 800px) {
+        .res-img {
+            width: 480px;
+        }
+    }
+    
+    @media screen and (max-width: 799px) {
+        .res-img {
+            width: 100%;
+        }
+    }
+    
+    @media screen and (min-width: 800px) {
+        .res-img-sm {
+            height: 110px;
+        }
+    }
+    
+    @media screen and (max-width: 799px) {
+        .res-img-sm {
+            width: 100%;
+        }
+    }
+    
+     :root {
+        /*========== Colors ==========*/
+        --hue: 14;
+        --first-color: hsl(var(--hue), 91%, 54%);
+        --first-color-alt: hsl(var(--hue), 91%, 50%);
+        --title-color: hsl(var(--hue), 4%, 100%);
+        --text-color: hsl(var(--hue), 4%, 85%);
+        --text-color-light: hsl(var(--hue), 4%, 55%);
+        /*Green gradient*/
+        --body-color: linear-gradient(90deg, hsl(234, 28%, 40%) 0%, hsl(236, 54%, 39%) 100%);
+        --container-color: linear-gradient(136deg, hsl(229, 38%, 46%) 0%, hsl(246, 48%, 42%) 100%);
+        /*Red gradient*/
+        /* --body-color: linear-gradient(90deg, hsl(360, 28%, 40%) 0%, hsl(18, 28%, 40%) 100%);
+            --container-color: linear-gradient(136deg, hsl(360, 28%, 35%) 0%, hsl(18, 28%, 35%) 100%); */
+        /*Black solid*/
+        /* --body-color: hsl(30, 8%, 8%);
+            --container-color: hsl(30, 8%, 10%); */
+        /*========== Font and typography ==========*/
+        --body-font: 'Poppins', sans-serif;
+        --biggest-font-size: 2rem;
+        --h1-font-size: 1.5rem;
+        --h2-font-size: 1.25rem;
+        --h3-font-size: 1rem;
+        --normal-font-size: .938rem;
+        --small-font-size: .813rem;
+        --smaller-font-size: .75rem;
+        /*========== Font weight ==========*/
+        --font-medium: 500;
+        --font-semi-bold: 600;
+        --font-black: 900;
+        /*========== Margenes Bottom ==========*/
+        --mb-0-25: .25rem;
+        --mb-0-5: .5rem;
+        --mb-0-75: .75rem;
+        --mb-1: 1rem;
+        --mb-1-5: 1.5rem;
+        --mb-2: 2rem;
+        --mb-2-5: 2.5rem;
+        /*========== z index ==========*/
+        --z-tooltip: 10;
+        --z-fixed: 100;
+    }
+    /* Responsive typography */
+    
+    @media screen and (min-width: 992px) {
+         :root {
+            --biggest-font-size: 4rem;
+            --h1-font-size: 2.25rem;
+            --h2-font-size: 1.5rem;
+            --h3-font-size: 1.25rem;
+            --normal-font-size: 1rem;
+            --small-font-size: .875rem;
+            --smaller-font-size: .813rem;
+        }
+    }
+    /*=============== BASE ===============*/
+    
+    body {
+        margin: var(--header-height) 0 0 0;
+        font-family: var(--body-font);
+        font-size: var(--normal-font-size);
+        background: var(--body-color);
+        color: var(--text-color);
+    }
